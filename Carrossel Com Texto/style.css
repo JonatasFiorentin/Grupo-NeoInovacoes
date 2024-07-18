@@ -1,5 +1,9 @@
-.carrosel{
+body{
   background: #e5e5e5;
+}
+
+.carrossel{
+  background-color: #bebbbb5c;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -7,7 +11,10 @@
   align-items: center;
   padding-top: 50px;
   padding-bottom: 50px;
-  height: 830px;
+  margin-top: 300px;
+  width: 1000px;
+  margin-left: 500px;
+  border-radius: 1000px;
 }
 
 .item{
@@ -19,6 +26,7 @@
 
 .texto-depoimento{
   font-size: 25px;
+
 
 }
 
@@ -54,3 +62,4 @@ button:hover{
   scale: 1.1;
   opacity: 90%;
 }
+
