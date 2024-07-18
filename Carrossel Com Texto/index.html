@@ -5,28 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <script></script>
+    <script>
+      const imgs = [
+        `https://sudotec.org.br/upload/aprendercrescerdepoimentos/dest_7.jpg`,
+        `https://sudotec.org.br/upload/aprendercrescerdepoimentos/dest_5.jpg`,
+        'https://sudotec.org.br/upload/aprendercrescerdepoimentos/dest_4.jpg',
+        `https://sudotec.org.br/upload/aprendercrescerdepoimentos/dest_6.jpg`,
+        `https://sudotec.org.br/upload/aprendercrescerdepoimentos/dest_2.jpg`,
+      ]
+
+      const textos = [
+        `O projeto Aprender e Crescer foi um dos marcos do meu início de carreirana área de tecnologia e programação, caí de para-quedas, com o envio dainscrição de um amigo.Trabalhava no RH`,
+        `O curso Aprender e Crescer foi uma experiência incrível, pois além de todo o aprendizado adquirido, na área...`,
+        `Vim de outra cidade para cursar Engenharia de Software na UTFPR e em paralelo iniciei o curso Aprender e Crescer da Sudotec, como uma...`,
+        `O curso aprender & crescer foi uma das coisas mais importantes que aconteceu comigo em 2019, se não a mais importante, pois...`,
+        `O projeto Aprender e Crescer foi o ponto de 'start' na minha vida na área de tecnologia, após passar pelo proces...`,
+      ]
+
+      const nomes = [
+        `-Bernardo Bortot Spiazzi - AC 2021`,
+        `-PEDRO LUCAS MEURER - AC - 2019`,
+        `-GABRIELA  FARIAS - AC - 2016`,
+        `-GABRIEL NOVOCHADLEY - AC-2019`,
+        `-ALISSON STOPASSOLE -  AC-2015`,
+      ]
+
+      let indexCarrossel = 0
+
+      function volta() {
+        indexCarrossel--
+        if (indexCarrossel < 0) indexCarrossel = textos.length - 1
+
+        mudarCarrossel()
+      }
+
+      function avanca() {
+        indexCarrossel++
+        if (indexCarrossel > textos.length - 1) indexCarrossel = 0
+
+        mudarCarrossel()
+      }
+
+      function mudarCarrossel() {
+        let textoCarrossel = document.getElementById('texto-depoimento')
+        let imgCarrossel = document.getElementById('img-depoimento')
+        textoCarrossel.innerHTML =
+          textos[indexCarrossel] + '<br><p>' + nomes[indexCarrossel] + '</p>'
+        imgCarrossel.src = imgs[indexCarrossel]
+      }
+
+      // setInterval(() => {
+      //   avanca()
+      // }, 3000)
+    </script>
   </head>
   <body>
     <div class="carrosel">
       <div class="item">
         <div class="botao-direita">
-          <img src="https://sudotec.org.br/imgs/btn-left2.png" />
+          <button type="button" class="direita" onclick="avanca()">
+            <img src="https://sudotec.org.br/imgs/btn-left.png" alt="" />
+          </button>
         </div>
         <div class="foto">
           <img
+            id="img-depoimento"
             src="https://sudotec.org.br/upload/aprendercrescerdepoimentos/dest_7.jpg"
           />
         </div>
-        <div class="texto-depoimento">
-          "O projeto Aprender e Crescer foi um dos marcos do meu início de
-          carreira na área de tecnologia e programação,&nbsp;caí&nbsp;de
-          para-quedas, com o envio da inscrição de um amigo. Trabalhava no RH...
-          <br />
-          <p>- Bernardo Bortot Spiazzi - AC 2021</p>
+        <div id="texto-depoimento">
+          O projeto Aprender e Crescer foi um dos marcos do meu início de
+          carreirana área de tecnologia e programação, caí de para-quedas, com o
+          envio dainscrição de um amigo.Trabalhava no RH...<br />
+          <p>-Bernardo Bortot Spiazzi - AC 2021</p>
         </div>
         <div class="botao-esquerda">
-          <img src="https://sudotec.org.br/imgs/btn-right2.png" />
+          <button type="button" class="esquerda" onclick="volta()">
+            <img src="https://sudotec.org.br/imgs/btn-right.png" alt="" />
+          </button>
         </div>
       </div>
     </div>
