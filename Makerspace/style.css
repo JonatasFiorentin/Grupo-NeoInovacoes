@@ -79,3 +79,22 @@ body {
   flex-wrap: wrap;
   gap: 30px;
 }
+
+.saiba-mais{
+  font-family: ;
+  color: orange;
+  border: solid orange;
+  padding: 10px;
+  border-radius: 05px;
+  border-width: 1px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: 'Poppins', sans-serif;
+  transition: 0.5s;
+}
+
+.saiba-mais:hover{
+  scale: 1.1;
+  background-color: orange;
+  color: white;
+}
