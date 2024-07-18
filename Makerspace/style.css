@@ -1,0 +1,81 @@
+body {
+  background-image: url(imgs/fundo-section-maker-space.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.tela-inteira{
+  display: flex;
+  flex-direction: row-reverse;
+  height: 915px;
+  padding-right: 100px;
+  gap: 80px;
+}
+.makerspace{
+  display: flex;
+    width: 680px;
+    height: 320px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 40px;
+    margin-right: 200px;
+
+}
+.titulo-maker-space {
+  font-weight: bold;
+  font-size: 44px;
+  color: #ffef13;
+  line-height: 45px;
+  margin-bottom: 15px;
+  margin-top: 50px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.resumo-maker-space{
+  color: #fff !important;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.foto2 img{
+  width: 310px;
+  height: 410px;
+}
+
+.foto2 {
+  margin-left: 120px;
+  display: flex;
+  height: 410px;
+  margin-bottom: 05px;
+
+}
+
+.foto1 img{
+  width: 150px;
+  height: 150px;
+}
+
+.foto1{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 150px;
+}
+
+.fotos{
+  display: flex;
+  width: 500px;
+  margin-left: 250px;
+  flex-direction: column;
+  margin-top: 70px;
+
+}
+
+.fotosabaixo{
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  flex-wrap: wrap;
+  gap: 30px;
+}

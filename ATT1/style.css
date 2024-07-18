@@ -1,0 +1,21 @@
+body{
+  display: flex;
+  justify-content: space-between;
+}
+
+.foto{
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  border: solid gray;
+}
+
+.titulo{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  color: #0058a2;
+  font-weight: 1000;
+  font-size: 28px;
+  line-height: 1;
+}

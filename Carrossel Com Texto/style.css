@@ -1,0 +1,46 @@
+.carrosel{
+  background: #e5e5e5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 500px;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.item{
+  display: flex;
+  width: 800px;
+  gap: 50px;
+  align-items: center;
+}
+
+.texto-depoimento{
+  font-size: 25px;
+
+}
+
+.texto-depoimento p{
+  font-size: 20px;
+  font-weight: bold;
+}
+.foto{
+  width: 150px;
+  height: 150px;
+  border-radius: 80px;
+  border: solid rgb(255, 255, 255);
+  border-width: 05px;
+}
+
+.foto img{
+  width: 150px;
+  height: 150px;
+  border-radius: 80px;
+}
+
+.botao-direita{
+  width: 24px;
+  height: 36px;
+}
+
