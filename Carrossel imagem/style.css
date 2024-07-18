@@ -1,0 +1,35 @@
+button {
+  position: absolute;
+}
+
+.pai{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.esquerda {
+  top: 500px;
+  left: 450px;
+}
+
+.direita {
+  top: 500px;
+  left:  1420px;
+}
+
+button{
+  border: none;
+  background-color: transparent;
+}
+
+button:hover{
+  scale: 1.1;
+  opacity: 90%;
+}
+
+#imagem-carrossel{
+  width: 900px;
+  height: auto;
+}
