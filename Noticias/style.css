@@ -7,6 +7,7 @@ body{
   flex-direction: column;
   gap: 10px;
   align-items: center;
+  margin-top: 5%;
 }
 
 .texto{
@@ -46,4 +47,9 @@ transition: 0.5s;
 
 .img1 img:hover{
   scale: 1.02;
+}
+
+hr{
+  width: 30%;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.042);
 }
