@@ -39,6 +39,11 @@ body{
 img{
 height: 140px;
 width: 250px;
-border-radius: 20px;
+border-radius: 10px;
+transition: 0.5s;
 
+}
+
+img:hover{
+  scale: 1.02;
 }
