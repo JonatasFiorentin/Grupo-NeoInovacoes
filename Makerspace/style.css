@@ -49,7 +49,11 @@ body {
   display: flex;
   height: 410px;
   margin-bottom: 05px;
+  transition: 0.5s;
+}
 
+.foto2:hover{
+  scale: 1.02;
 }
 
 .foto1 img{
@@ -61,6 +65,11 @@ body {
   padding-top: 5px;
   padding-bottom: 5px;
   height: 150px;
+  transition: 0.5s;
+}
+
+.foto1:hover{
+  scale: 1.1;
 }
 
 .fotos{

@@ -40,6 +40,11 @@ body{
   border-radius: 80px;
   border: solid rgb(255, 255, 255);
   border-width: 05px;
+  transition: 0.5s;
+}
+
+.foto:hover{
+  scale: 1.1;
 }
 
 .foto img{
