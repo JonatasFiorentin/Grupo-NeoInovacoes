@@ -36,7 +36,7 @@ body{
     height: 50px;
 }
 
-img{
+.img1 img{
 height: 140px;
 width: 250px;
 border-radius: 10px;
@@ -44,6 +44,6 @@ transition: 0.5s;
 
 }
 
-img:hover{
+.img1 img:hover{
   scale: 1.02;
 }
